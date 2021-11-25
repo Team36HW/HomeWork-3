@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Name - Homework 3</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,14 +16,70 @@
             <a href="index.html" class="logo">
                 Logo
             </a>
-            <nav class="header-navigation">
+            <nav class="header-navigation" id="overlay">
                 <a href="index.html" class="active" title="Home">Home</a>
-                <a href="#" title="Team members">Team members</a>
+                <a href="teamMembers.html" title="Team members">Team members</a>
                 <a href="#" title="Hour of Cod">Hour of Code</a>
                 <a href="#" title="Project">Project</a>
             </nav>
+            <div id="hamburger">
+                <div></div>
+            </div>
         </div>
     </header>
+    <main>
+        <h2 class="title">Team Members</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-main">
+                    <img src="img/musa.jpg" alt="Person">
+                </div>
+                <div class="card-hover">
+                    <h3>Telman Yusifov</h3>
+                    <div class="tags">
+                        <a class="tag" href="teamMembers.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-main">
+                    <img src="img/musa.jpg" alt="Person">
+                </div>
+                <div class="card-hover">
+                    <h3>Musa Afandiyev</h3>
+                    <div class="tags">
+                        <a class="tag" href="teamMembers.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-main">
+                    <img src="img/musa.jpg" alt="Person">
+                </div>
+                <div class="card-hover">
+                    <h3>Silla Ibrahim</h3>
+                    <div class="tags">
+                        <a class="tag" href="teamMembers.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-main">
+                    <img src="img/musa.jpg" alt="Person">
+                </div>
+                <div class="card-hover">
+                    <h3>Amin Eylazov</h3>
+                    <div class="tags">
+                        <a class="tag" href="teamMembers.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,47 @@
+@media screen and (max-width: 1300px) {
+    .container {
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .container {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #hamburger {
+        display: flex;
+    }
+    .header-navigation {
+        position: fixed;
+        width: 50%;
+        min-height: 90%;
+        background-color: #F8F8F8;
+        box-shadow: 0 2px 30px 0 rgba(12, 53, 115, 0.1);
+        z-index: 2;
+        transform: translateX(200%);
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 15%;
+        left: 0;
+    }
+    .header-navigation.menu {
+        transform: translateX(100%);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-navigation {
+        width: 100%;
+    }
+    .header-navigation.menu {
+        transform: translateX(0%);
+    }
+}
