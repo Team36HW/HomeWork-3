@@ -97,11 +97,16 @@ a {
     text-decoration: none;
 }
 
+body {
+    background-color: #15171A;
+}
+
 header {
-    background-color: #ffffff;
+    background-color: #0D1013;
     box-shadow: 0 2px 30px 0 rgba(12, 53, 115, 0.1);
     width: 100%;
     position: fixed;
+    z-index: 1;
     top: 0;
     padding: 40px 0;
 }
@@ -118,6 +123,7 @@ header .container {
 .logo {
     float: left;
     width: 20%;
+    color: #d1d1d1;
 }
 
 .header-navigation {
@@ -132,7 +138,7 @@ header .container {
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
-    color: #16151b;
+    color: #d1d1d1;
     margin: 0 15px;
     font-size: 16px;
     letter-spacing: 1px;
@@ -145,7 +151,7 @@ header .container {
     position: absolute;
     width: 100%;
     height: 3px;
-    background: #16151b;
+    background: #8ac832;
     top: 47%;
     animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 }
@@ -154,8 +160,16 @@ header .container {
     animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 }
 
+.header-navigation a:hover {
+    color: #8ac832;
+}
+
 .header-navigation a.active:before {
     animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+.header-navigation a.active {
+    color: #8ac832;
 }
 
 @keyframes in {
@@ -219,7 +233,7 @@ header .container {
 #hamburger div,
 #hamburger div:after,
 #hamburger div:before {
-    background-color: #000;
+    background-color: #d1d1d1;
     border-radius: 10px;
     width: clamp(1.5rem, 2vw + 1.1rem, 6rem);
     height: clamp(0.2rem, 0.3vw + 0.1rem, 0.8rem);
@@ -253,7 +267,14 @@ header .container {
 }
 
 main {
+    width: 80%;
+    margin: auto;
     margin-top: 150px;
+    text-align: center;
+    min-height: 1000px;
+    background-image: url(../img/decor.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 * {
@@ -273,7 +294,6 @@ img {
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    width: 80%;
     margin: auto;
     gap: 1rem;
 }
@@ -324,7 +344,7 @@ img {
     align-items: center;
     padding: 2rem;
     text-align: center;
-    background: hsla(0, 0%, 0%, 0.9);
+    background: hsla(216, 24%, 4%, 0.9);
     gap: 1rem;
     visibility: hidden;
     opacity: 0;
@@ -369,10 +389,23 @@ h3 {
 }
 
 .title {
-    width: 80%;
+    color: #d1d1d1;
     font-size: 1.6em;
     margin: auto;
     text-align: center;
-    text-decoration: underline;
     margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#da1b60));
+    background: -o-linear-gradient(left, #ff8a00, #da1b60);
+    background: linear-gradient(to right, #ff8a00, #da1b60);
 }
