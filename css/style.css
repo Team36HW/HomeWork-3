@@ -101,12 +101,19 @@ body {
     background-color: #15171A;
 }
 
+canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
 header {
     background-color: #0D1013;
-    box-shadow: 0 2px 30px 0 rgba(12, 53, 115, 0.1);
+    -webkit-box-shadow: 0 0 19px 2px rgba(0, 0, 0, .91);
+    box-shadow: 0 0 19px 2px rgba(0, 0, 0, .91);
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 9999999;
     top: 0;
     padding: 40px 0;
 }
@@ -269,12 +276,13 @@ header .container {
 main {
     width: 80%;
     margin: auto;
-    margin-top: 150px;
+    padding-top: 150px;
     text-align: center;
-    min-height: 1000px;
-    background-image: url(../img/decor.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 100px;
 }
 
 * {
@@ -358,6 +366,11 @@ h3 {
     transition: 250ms ease;
 }
 
+.card-hover h3 {
+    color: #fff;
+    font-weight: bold;
+}
+
 .card-hover a:hover {
     color: #000;
 }
@@ -396,6 +409,7 @@ h3 {
     margin-bottom: 25px;
     position: relative;
     display: inline-block;
+    margin-top: 40px;
 }
 
 .title::before {
@@ -408,4 +422,28 @@ h3 {
     background: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#da1b60));
     background: -o-linear-gradient(left, #ff8a00, #da1b60);
     background: linear-gradient(to right, #ff8a00, #da1b60);
+}
+
+.info {
+    background-color: rgba(8, 12, 15, 0.9);
+    color: #88919d;
+    padding: 25px;
+}
+
+footer {
+    width: 100%;
+    background-color: #040506;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.copyright {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.copyright p {
+    color: #929393;
 }
