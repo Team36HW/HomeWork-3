@@ -155,6 +155,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    color: #F7F7F7;
     
 }
 .s:hover
