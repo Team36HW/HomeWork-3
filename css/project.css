@@ -108,6 +108,7 @@
 .project-description {
     margin-bottom: 24px;
     font-size: 18px;
+    text-align: justify;
 }
 
 .member-links {
