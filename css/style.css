@@ -90,6 +90,7 @@ video {
 
 * {
     font-family: 'Roboto', sans-serif !important;
+    transition: 450ms;
 }
 
 a {

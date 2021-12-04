@@ -1,0 +1,95 @@
+.cover-img {
+    border-radius: 50px;
+    box-shadow: 0 2px 6px 0 rgba(23, 25, 57, 0.04), 0 10px 14px 0 rgba(21, 60, 245, 0.08);
+    padding: 0;
+}
+
+.team-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    max-width: 1050px;
+    margin: -38px auto 54px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.about-team {
+    margin-top: 50px;
+    color: #d1d1d1;
+    width: 70%;
+    text-align: left;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 60px;
+}
+
+.about-team h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 2rem;
+}
+
+.project-description {
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.about-team {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.button {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    /* put your font-family */
+    font-size: 18px;
+    padding: 20px 0px;
+    width: 150px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.button {
+    transition: all 0.2s linear 0s;
+}
+
+.button:before {
+    content: "";
+    font-family: FontAwesome;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0 50% 50% 0;
+    transform: scale(0, 1);
+    transform-origin: left center;
+    transition: all 0.2s linear 0s;
+}
+
+.button:hover {
+    text-indent: 30px;
+}
+
+.button:hover:before {
+    transform: scale(1, 1);
+    text-indent: 0;
+}

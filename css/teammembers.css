@@ -63,14 +63,14 @@
     color: #e3e3e3;
     font-family: 'Roboto', sans-serif !important;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     padding: 0 40px 0 0;
 }
 
 .card_right__review p {
     color: white;
     font-family: 'Roboto', sans-serif !important;
-    font-size: 12px;
+    font-size: 14px;
     padding: 0 40px 0 40px;
     letter-spacing: 1px;
     margin: 10px 0 10px 0;
@@ -80,8 +80,14 @@
 .card_right__review a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif !important;
-    font-size: 14px;
-    padding: 0 0 0 40px;
-    color: #ffda00;
+    color: #89c832de;
     margin: 0;
+}
+
+.card_right__review a:hover {
+    color: #8ac832;
+}
+
+.card_right__review li {
+    list-style-type: circle;
 }
