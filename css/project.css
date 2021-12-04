@@ -155,5 +155,10 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    color: #FFD700;
+    
+}
+.flex:hover
+{
+ color: #FFD700;   
+    
 }
