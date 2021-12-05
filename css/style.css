@@ -116,7 +116,7 @@ header {
     position: fixed;
     z-index: 9999999;
     top: 0;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 header .container {
@@ -134,11 +134,16 @@ header .container {
     color: #d1d1d1;
 }
 
+.logo img {
+    width: 110px;
+}
+
 .header-navigation {
     text-align: right;
     float: right;
     width: 80%;
     display: inline-block;
+    margin: 10px 0;
 }
 
 .header-navigation a {
@@ -334,7 +339,7 @@ img {
 .card-main {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     width: 100%;
     height: 100%;
 }
